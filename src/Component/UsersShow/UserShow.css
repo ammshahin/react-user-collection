@@ -1,7 +1,10 @@
-.userShow{
+.user{
     display: flex;
+    margin-top: 5px;
+    border-bottom: 1px solid lightgray;
+    
 }
 
 .userImg{
-
+    margin-right: 5px;
 }
