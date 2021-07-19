@@ -7,7 +7,7 @@ const UserCount = (props) => {
     const sorted = users.sort(function (a, b) {
         return parseFloat(a.dob.age) - parseFloat(b.dob.age);
     });
-    console.log(sorted);
+   
     
     return (
         <div>
@@ -17,8 +17,8 @@ const UserCount = (props) => {
             <ul>
                 {   
                     
-                    sorted.map((sorted) => 
-                         <li> {sorted.name.first+" "} 
+                    sorted.map((sorted,i) => 
+                         <li key={i}> {sorted.name.first+" "} 
                          age: {sorted.dob.age}</li>
                      )
                 }

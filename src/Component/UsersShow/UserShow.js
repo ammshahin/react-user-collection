@@ -6,6 +6,8 @@ const UserShow = (props) => {
     const { email, picture, name,dob, location } = props.user;
     const { title, first, last } = name;
     const addUsers = props.handleAdded;
+
+    
     return (
         <div className="user">
             <div className="userImg">

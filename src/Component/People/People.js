@@ -23,8 +23,8 @@ const People = () => {
         <div className="people">
             <div className="userShow">
             {
-                users.map(user => 
-                    <UserShow  handleAdded = {handleAdded} user={user}></UserShow>
+                users.map((user,i) => 
+                    <UserShow key={i}  handleAdded = {handleAdded} user={user}></UserShow>
                     
                     
                 )
